@@ -1,10 +1,6 @@
-/*
-Utilizando pgAdmin4:
+CREATE DATABASE Question4;
 
-Deve-se acessar o Databases -> com o botão direito -> Create -> database -> nomear o banco e salvar.
-Após a criação do banco -> botão direito -> refresh -> Query tool.
-No Query Tool, utilizar os comandos abaixo.
-*/
+USE Question4;
 
 CREATE TABLE Address(
 	address_id SERIAL PRIMARY KEY,
