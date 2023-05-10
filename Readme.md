@@ -13,4 +13,6 @@ Settings:
 
 • Java version 17
 
+IDE utilizada para resolução dos desafios Visual Studio Code.
+
 -----------------------------------------------------------
