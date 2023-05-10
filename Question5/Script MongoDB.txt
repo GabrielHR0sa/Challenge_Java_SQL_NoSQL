@@ -2,7 +2,7 @@ use admin
 use question5
 db
 db.Person
-db.Person.isert({
+db.Person.insert({
     "object" : "",
     "name" : "",
     "age" : "",
