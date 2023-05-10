@@ -1,19 +1,29 @@
 package Question1;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int qtFuncionarios;
+        int verifica;
 
-        // Pega as informações do usuário sobre a quantidade de funcionarios e armazena
-        // no array
-        System.out.println("Insira a quantidade de funcionários que serão cadastrados: \n");
-        int qtFuncionarios = scanner.nextInt();
+        do {
 
-        if (qtFuncionarios <= 0) {
-            System.out.println("Favor digitar um numero válido de funcionários");
-        } else {
+            // espera um valor valido para o numero de usuários
+            do {
+
+                // Pega as informações do usuário sobre a quantidade de funcionarios e armazena
+                // no array
+                System.out.println("\nInsira a quantidade de funcionários que serão cadastrados: \n");
+                qtFuncionarios = scanner.nextInt();
+
+                if (qtFuncionarios <= 0) {
+                    System.out.println("\n---Favor digitar um numero válido de funcionários---\n");
+                }
+
+            } while (qtFuncionarios <= 0);
 
             int vet[] = new int[qtFuncionarios];
             String[] nome = new String[qtFuncionarios];
@@ -39,9 +49,13 @@ public class Main {
                 System.out.println("---------------------------\n");
             }
 
-        }
+            System.out.println("\nDeseja Repetir o programa? 1[Sim]  0[Não]: \n");
+            verifica = scanner.nextInt();
+
+        } while (verifica != 0);
 
         scanner.close();
+
     }
 
     // Calcula o bonus ou o desconto do funcionário baseado no salário
