@@ -1,0 +1,28 @@
+use admin
+use question5
+db
+db.Person
+db.Person.isert({
+    "object" : "",
+    "name" : "",
+    "age" : "",
+    "phone" : "",
+    "height" : "",
+    "email" : "",
+    "cpf" : "",
+    "birthday" : "",
+    "address" : {
+        "zip" : "",
+        "street" : "",
+        "complement" : "",
+        "neighborhood" : "",
+        "city" : "",
+        "state" : "",
+        "country" : ""
+    }
+})
+
+
+
+
+
