@@ -1,4 +1,3 @@
-use admin
 use question5
 db
 db.Person
@@ -20,9 +19,4 @@ db.Person.insert({
         "state" : "",
         "country" : ""
     }
-})
-
-
-
-
-
+});
